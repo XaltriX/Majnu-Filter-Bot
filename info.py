@@ -12,8 +12,8 @@ id_pattern = re.compile(r'^.\d+$')
 # 🔹 BOT INFORMATION
 # ============================================================
 SESSION = environ.get('SESSION', 'MyselfNeon')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '23491399'))
+API_HASH = environ.get('API_HASH', '2b7f62a2c17cdb83427074b9615cdb90')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
@@ -24,12 +24,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 PICS = (
     environ.get(
         'PICS',
-        'https://files.catbox.moe/ybg6gw.jpg '
-        'https://files.catbox.moe/b5a3dz.jpg '
-        'https://files.catbox.moe/n0xw7h.jpg '
-        'https://files.catbox.moe/fhexii.jpg '
-        'https://files.catbox.moe/v7w8co.jpg '
-        'https://files.catbox.moe/r946bu.jpg'
+        'https://files.catbox.moe/ue2di5.jpg '
     )
 ).split()
 
@@ -37,10 +32,10 @@ PICS = (
 # 🔹 ADMINS & USERS
 # ============================================================
 ADMINS = [int(admin) if id_pattern.search(admin) else admin
-          for admin in environ.get('ADMINS', '841851780').split()]  # Multiple IDs separated by space
+          for admin in environ.get('ADMINS', '7504344381').split()]  # Multiple IDs separated by space
 
 auth_users = [int(user) if id_pattern.search(user) else user
-              for user in environ.get('AUTH_USERS', '').split()]  # Multiple IDs separated by space
+              for user in environ.get('AUTH_USERS', '7504344381').split()]  # Multiple IDs separated by space
 
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -48,18 +43,18 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # ============================================================
 # 🔹 CHANNELS AND GROUPS
 # ============================================================
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001889915480'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003120220144'))
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch
-            for ch in environ.get('CHANNELS', '-1002627138181 -1002487845241').split()]
+            for ch in environ.get('CHANNELS', '-1002898502458').split()]
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database
 
-REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False))  # True → request to join FSUB
+REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True))  # True → request to join FSUB
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False))                # Retry button for FSUB
 
 # Force Subscribe Channel
-auth_channel = environ.get('AUTH_CHANNEL', '-1002384933640')
+auth_channel = environ.get('AUTH_CHANNEL', '-1003451994641')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # File request channel
@@ -70,21 +65,21 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 
 # Bot support group
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1003183729024')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # File store channel (/batch command)
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002487845241')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002898502458')).split()]
 
 # Delete channel(s)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch
-                   for dch in environ.get('DELETE_CHANNELS', '-1002231967338').split()]
+                   for dch in environ.get('DELETE_CHANNELS', '-1003283470054').split()]
 
 
 # ============================================================
 # 🔹 DATABASE
 # ============================================================
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Majnu:Majnu_125@cluster0.6rysiz2.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "MyselfNeon")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'neoncollection')
 
@@ -107,10 +102,10 @@ else:
 # ============================================================
 # 🔹 PREMIUM AND REFERAL 
 # ============================================================
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If False Then No Need To Fill.
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True))
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False))
 
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '5'))
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
@@ -140,10 +135,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'AnimeZerox') # Public 
 # ============================================================
 # 🔹 LINKS
 # ============================================================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+o1s-8MppL2syYTI9')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/neonfiles')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Talk2neonBot') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/MyselfNeon')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+LS27verlo3I3ZDI0')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/The_Movie_Mania')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Mr_Majnu_125') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Mr_Majnu_125')
 
 
 # ============================================================
@@ -261,6 +256,7 @@ REACTIONS = [
 # Dont remove Credits
 # Developer Telegram @MyselfNeon
 # Update channel - @NeonFiles
+
 
 
 
