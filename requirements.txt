@@ -9,6 +9,8 @@ marshmallow==3.14.1
 umongo==3.0.1
 python-decouple
 python-dotenv
+edge-tts
+
 
 # --- Networking & Requests ---
 aiohttp==3.9.5
@@ -62,3 +64,4 @@ git+https://github.com/Joelkb/cinemagoer
 # --- NEW (added for your improved plugin) ---
 # These ensure SSL retry logic & async downloads work perfectly
 async-timeout==4.0.3
+
