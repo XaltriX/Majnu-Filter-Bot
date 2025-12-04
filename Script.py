@@ -221,11 +221,7 @@ If you do not see the Requested Movie/Series file, look at the next page...</i><
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """📂 File Name: {filename}
-💾 Size: {filesize}
-⏰ Duration: {duration}
-
-⚡ Powered By @ll_ZA1N_ll"""
+    CAPTION = """📂 Your file is ready! \nPowered by @ll_ZA1N_ll"""
 
 
     IMDB_TEMPLATE_TXT = """
