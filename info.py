@@ -32,7 +32,7 @@ PICS = (
 # 🔹 ADMINS & USERS
 # ============================================================
 ADMINS = [int(admin) if id_pattern.search(admin) else admin
-          for admin in environ.get('ADMINS', '7504344381').split()]  # Multiple IDs separated by space
+          for admin in environ.get('ADMINS', '7504344381 1643851457 5706788169').split()]  # Multiple IDs separated by space
 
 auth_users = [int(user) if id_pattern.search(user) else user
               for user in environ.get('AUTH_USERS', '7504344381').split()]  # Multiple IDs separated by space
@@ -138,7 +138,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'AnimeZerox') # Public 
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+LS27verlo3I3ZDI0')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/The_Movie_Mania')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Mr_Majnu_125') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Mr_Majnu_125')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/ll_ZA1N_ll')
 
 
 # ============================================================
@@ -157,7 +157,7 @@ SPELL_CHECK_REPLY = bool(environ.get("SPELL_CHECK_REPLY", True))
 MELCOW_NEW_USERS = bool(environ.get('MELCOW_NEW_USERS', True))
 PROTECT_CONTENT = bool(environ.get('PROTECT_CONTENT', False))
 PUBLIC_FILE_STORE = bool(environ.get('PUBLIC_FILE_STORE', True))
-NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
+NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
@@ -191,7 +191,7 @@ TUTORIAL = environ.get('TUTORIAL', '')
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 PORT = environ.get("PORT", "8080")
-MSG_ALRT = environ.get('MSG_ALRT', 'Powered by @NeonFiles ❤️✨')
+MSG_ALRT = environ.get('MSG_ALRT', 'Powered by @@ll_ZA1N_ll ❤️✨')
 
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
@@ -217,7 +217,7 @@ YEARS = [str(year) for year in range(1900, 2026)]
 # ============================================================
 # 🔹 STREAMING & DOWNLOAD
 # ============================================================
-STREAM_MODE = bool(environ.get('STREAM_MODE', False))
+STREAM_MODE = bool(environ.get('STREAM_MODE', True))
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
@@ -225,7 +225,7 @@ SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 min
 
 ON_HEROKU = 'DYNO' in environ
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://majnu-filter-bot-5e0023da96d7.herokuapp.com/")
 
 
 # ============================================================
@@ -256,6 +256,7 @@ REACTIONS = [
 # Dont remove Credits
 # Developer Telegram @MyselfNeon
 # Update channel - @NeonFiles
+
 
 
 
