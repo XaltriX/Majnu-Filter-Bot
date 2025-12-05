@@ -156,7 +156,7 @@ async def add_password(client: Client, message: Message):
             await status.delete()
             await message.reply_document(
                 protected_path,
-                caption=f"🔐 **__File Protected Successfully\n🔑 Password__**: `{password}`\n\n**🔥 __Powered By @NeonFiles__**"
+                caption=f"🔐 **__File Protected Successfully\n🔑 Password__**: `{password}`\n\n**🔥 __Powered By @ll_ZA1N_ll__**"
             )
 
         else:
@@ -220,7 +220,7 @@ __• /addpass \n- **Reply To any PDF or ZIP Files
 **__- Only PDF and ZIP Are Supported
 - Large Files (>2GB) May Require ZIP\n   Packaging To Send Via Telegram__**
 
-**🔥 __Powered By @NeonFiles__ 🔥**
+**🔥 __Powered By @ll_ZA1N_ll__ 🔥**
 """
     await message.reply(help_text)
     
