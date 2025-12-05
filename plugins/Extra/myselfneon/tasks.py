@@ -69,7 +69,7 @@ async def todo_help(client: Client, message: Message):
     "3️⃣ __/listtask – **Show All Your Tasks__**\n"
     "4️⃣ __/taskhelp – **Show This Help Menu__**\n\n"
     "🔹 **__Example:__**\n"
-    "`/addtask Finish Homework`\n\n**🔥 __Powered By @NeonFiles__ 🔥**"
+    "`/addtask Finish Homework`\n\n**🔥 __Powered By @ll_ZA1N_ll__ 🔥**"
     )
     await message.reply(help_text)
 
@@ -89,7 +89,7 @@ HELP_TEXT = (
     "**🔐 __Password Manager__**\n\n"
     "__/addpass **- Add Password__**\n"
     "__/removepass **- Remove Password__**\n\n"
-    "**🔥 __Powered By @NeonFiles__ 🔥**"
+    "**🔥 __Powered By @ll_ZA1N_ll__ 🔥**"
 )
 
 @Client.on_message(filters.command("help") & filters.private)
