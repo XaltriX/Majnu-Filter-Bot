@@ -214,7 +214,7 @@ async def telegraph_help(bot: Client, message: Message):
         "3️⃣ __/telegraphhelp \n- **Show This Help Message.__**\n\n"
         "**📌 __Additional Features:__**\n"
         "**- __Active Uploads Are Tracked Per User To Prevent Multiple Uploads At Once.__**\n"
-        "**- __File Size Limit For Catbox: 200 MB.__\n\n🔥 __Powered By @NeonFiles__ 🔥**\n"
+        "**- __File Size Limit For Catbox: 200 MB.__\n\n🔥 __Powered By @ll_ZA1N_ll__ 🔥**\n"
     )
     await message.reply_text(help_text)
 
